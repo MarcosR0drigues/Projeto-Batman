@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+header 
+{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav 
+{
+    width: 60%;
+}
+
+ul
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+li 
+{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover 
+{
+    color: red;
+}
+
+#logo 
+{
+    width: 150px;
+    height: 80px;
+}
+
+.viloes
+{
+    color: white;
+    font-size: 30px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.centrocardscontainer
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.cardsviloes
+{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+.card 
+{
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: white;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover
+{
+    transform: scale(1.02);
+}
+.banner1
+{
+    background-image: url('https://feira.tangerina.news/wp-content/uploads/2022/02/Danny-DeVito-Batman-Retorno-486x720.jpg');
+}
+.banner2
+{
+    background-image: url('https://static.wikia.nocookie.net/coisas-de-lucas/images/8/8c/Harvey.jpg/revision/latest?cb=20151208162813&path-prefix=pt');
+}
+.banner3
+{
+    background-image: url('https://conteudo.imguol.com.br/c/noticias/8b/2018/09/21/joaquin-phoenix-com-a-maquiagem-de-palhaco-em-coringa-1537578484204_v2_1x1.jpg');
+}
+.centro2cardscontainer
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.cardsviloes2
+{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+.card2
+{
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: white;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.card2:hover
+{
+    transform: scale(1.02);
+}
+.banner4
+{
+    background-image: url('https://img.odcdn.com.br/wp-content/uploads/2022/02/Charada-em-The-Batman.jpg');
+}
+.banner5
+{
+    background-image: url('https://static.wikia.nocookie.net/dcverse/images/c/c7/BaneTDKR2.png/revision/latest?cb=20150722013005');
+}
+.banner6
+{
+    background-image: url('https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2022/03/07/1422205986-catwoman-batman-zoekravitz.jpg');
+}
+
+
+footer
+{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span
+{
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navegation
+{
+    display: none;
+}
+
+.footer-list
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px)
+{
+    .footer-navegation
+    {
+        display: block;
+    }
+    nav
+    {
+        display: none;
+    }
+    .cardsviloes
+    {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+    .cardsviloes2
+    {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+}
